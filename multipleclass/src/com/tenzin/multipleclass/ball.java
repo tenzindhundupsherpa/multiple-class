@@ -10,7 +10,7 @@ package com.tenzin.multipleclass;
  * @author Home
  */
 public class ball {
-    public void football(){
-        System.out.println("This is another class");
+    public void football(String name){
+        System.out.println("Welcome to football "+ name);
     }
 }

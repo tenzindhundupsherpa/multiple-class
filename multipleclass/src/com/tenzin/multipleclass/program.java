@@ -16,11 +16,16 @@ public class program {
      */
     public static void main(String[] args) {
         
-        ball ballObject =new ball();
-        ballObject.football();
+        Scanner input= new Scanner(System.in);
+        ball ballObject = new ball();
+        
+        System.out.println("Enter your name here: ");
+        String name = input.nextLine();
+        
+        ballObject.football(name);
         
         
-        Scanner input = new Scanner(System.in);
+  
        
        while(true){
         System.out.println("Enter First Number");
@@ -68,6 +73,10 @@ public class program {
        else 
            System.exit(0);
         
+           System.out.println("do you want to continue?[Y/N]");
+           String select=input.next();
+           if(select.equalsIgnoreCase("n"))
+               System.exit(0);
          }
              
     }
